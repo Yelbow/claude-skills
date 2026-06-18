@@ -1,4 +1,3 @@
-<!-- test: GitHub write werkt -->
 ---
 name: social-post-writer
 description: Schrijft kant-en-klare LinkedIn posts en Instagram feed captions voor een solo web/branding/AI dienstverlener gericht op lokale kleine bedrijven in Nederland. Gebruik deze skill altijd wanneer de gebruiker een concept, onderwerp of idee heeft en daar een LinkedIn post of Instagram caption van wil maken. Trigger ook bij "schrijf een post", "maak een caption", "werk dit uit als post", of wanneer een concept uit de contentlijst wordt aangeboden.
