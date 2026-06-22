@@ -21,6 +21,7 @@ settings.local.json
 # IDE and debug artifacts
 debug/
 ide/
+shell-snapshots/
 
 # Session and project-specific outputs — entire projects/ dir is runtime data
 projects/
