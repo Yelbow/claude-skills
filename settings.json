@@ -1,0 +1,170 @@
+{
+  "env": {
+    "BASH_MAX_OUTPUT_LENGTH": "150000"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(docker pull:*)",
+      "WebSearch",
+      "Read(/home/jelle/Music/*)",
+      "Edit(/home/jelle/Music/*)",
+      "Write(/home/jelle/Music/*)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(sudo:*)"
+    ],
+    "ask": [
+      "Bash(rm *)",
+      "Bash(rmdir *)",
+      "Bash(del *)",
+      "Bash(unlink *)",
+      "Bash(shred *)",
+      "Bash(truncate *)",
+      "Bash(dd *)"
+    ],
+    "defaultMode": "bypassPermissions",
+    "additionalDirectories": [
+      "/home/jelle/Music"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/usr/bin/node\" \"/home/jelle/.claude/hooks/gsd-check-update.js\""
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"/home/jelle/.claude/hooks/gsd-session-state.sh\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash|Edit|Write|MultiEdit|Agent|Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/usr/bin/node\" \"/home/jelle/.claude/hooks/gsd-context-monitor.js\"",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/usr/bin/node\" \"/home/jelle/.claude/hooks/gsd-read-injection-scanner.js\"",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"/home/jelle/.claude/hooks/gsd-phase-boundary.sh\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/usr/bin/node\" \"/home/jelle/.claude/hooks/gsd-prompt-guard.js\"",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/usr/bin/node\" \"/home/jelle/.claude/hooks/gsd-read-guard.js\"",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/usr/bin/node\" \"/home/jelle/.claude/hooks/gsd-workflow-guard.js\"",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"/home/jelle/.claude/hooks/gsd-validate-commit.sh\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "\"/usr/bin/node\" \"/home/jelle/.claude/hooks/gsd-statusline.js\""
+  },
+  "enabledPlugins": {
+    "skill-creator@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "claude-mem@thedotmack": true,
+    "frontend-design@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "context-mode": {
+      "source": {
+        "source": "github",
+        "repo": "mksglu/context-mode"
+      }
+    },
+    "thedotmack": {
+      "source": {
+        "source": "github",
+        "repo": "thedotmack/claude-mem"
+      }
+    }
+  },
+  "effortLevel": "medium",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark-ansi",
+  "mcpServers": {
+    "google-sheets": {
+      "command": "/home/jelle/.local/bin/uvx",
+      "args": [
+        "mcp-google-sheets@latest"
+      ],
+      "env": {
+        "CREDENTIALS_PATH": "/home/jelle/.config/mcp-google-sheets/credentials.json",
+        "TOKEN_PATH": "/home/jelle/.config/mcp-google-sheets/token.json"
+      }
+    },
+    "framer-mcp": {
+      "type": "http",
+      "url": "https://mcp.unframer.co/mcp?id=03174a5c2968da4a4ff817f7b9b1a2f6791a63c0c6d87449bc9c7cd1fdc0773f&secret=txuS7xcxOw2JTT1clWTAfWAHuZpPOWSV"
+    }
+  },
+  "autocompact_percentage_override": 35,
+  "model": "haiku"
+}

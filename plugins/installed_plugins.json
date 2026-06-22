@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "plugins": {
+    "skill-creator@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/jelle/.claude/plugins/cache/claude-plugins-official/skill-creator/unknown",
+        "version": "unknown",
+        "installedAt": "2026-06-21T20:41:45.014Z",
+        "lastUpdated": "2026-06-21T20:43:29.475Z"
+      }
+    ],
+    "superpowers@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/jelle/.claude/plugins/cache/claude-plugins-official/superpowers/6.0.3",
+        "version": "6.0.3",
+        "installedAt": "2026-06-21T20:42:49.283Z",
+        "lastUpdated": "2026-06-21T20:42:49.283Z",
+        "gitCommitSha": "896224c4b1879920ab573417e68fd51d2ccc9072"
+      }
+    ],
+    "claude-mem@thedotmack": [
+      {
+        "scope": "user",
+        "installPath": "/home/jelle/.claude/plugins/cache/thedotmack/claude-mem/13.8.0",
+        "version": "13.8.0",
+        "installedAt": "2026-06-21T20:51:47.279Z",
+        "lastUpdated": "2026-06-21T20:51:47.279Z",
+        "gitCommitSha": "90c383ac4c47e57fde9cbdc6a03aa8d723164c42"
+      }
+    ],
+    "frontend-design@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/jelle/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown",
+        "version": "unknown",
+        "installedAt": "2026-06-21T20:52:51.114Z",
+        "lastUpdated": "2026-06-21T20:52:51.114Z"
+      }
+    ]
+  }
+}

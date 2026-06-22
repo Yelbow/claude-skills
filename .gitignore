@@ -1,0 +1,16 @@
+# Credentials and secrets
+.credentials.json
+remote-settings.json
+session-env
+
+# Runtime cache and state
+stats-cache.json
+file-history/
+sessions/
+downloads/
+paste-cache/
+.last-update-result.json
+
+# IDE and debug artifacts
+debug/
+ide/
