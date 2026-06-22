@@ -17,10 +17,8 @@ history.jsonl
 debug/
 ide/
 
-# Session and project-specific outputs
-projects/**/*-[a-f0-9]*/
-projects/**/*.jsonl
-projects/**/memory/
+# Session and project-specific outputs — entire projects/ dir is runtime data
+projects/
 
 # Plugin cache and backups
 backups/
