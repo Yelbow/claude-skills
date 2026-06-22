@@ -14,3 +14,7 @@ paste-cache/
 # IDE and debug artifacts
 debug/
 ide/
+
+# Session and project-specific outputs
+projects/**/*-[a-f0-9]*/
+projects/**/*.jsonl
