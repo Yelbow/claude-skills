@@ -120,6 +120,17 @@
           }
         ]
       }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd ~/.claude && git status --porcelain | grep -q . && echo '{\"systemMessage\": \"📝 Reminder: uncommitted changes in ~/.claude\"}' || echo '{}'",
+            "timeout": 3
+          }
+        ]
+      }
     ]
   },
   "statusLine": {
