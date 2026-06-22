@@ -10,6 +10,8 @@ sessions/
 downloads/
 paste-cache/
 .last-update-result.json
+.last-cleanup
+history.jsonl
 
 # IDE and debug artifacts
 debug/
@@ -18,3 +20,8 @@ ide/
 # Session and project-specific outputs
 projects/**/*-[a-f0-9]*/
 projects/**/*.jsonl
+
+# Plugin cache and backups
+backups/
+plugins/cache/
+plugins/marketplaces/*/
