@@ -610,7 +610,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp.git",
-        "sha": "38dd346805416c8bff2196e73c1410ca78d6f397"
+        "sha": "52cf8c40081567a200442ab12fad43edb550b0d4"
       },
       "homepage": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
     },
@@ -853,7 +853,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/CodSpeedHQ/codspeed.git",
-        "sha": "7b4f51ce48c9ae95ef110ca36375c584fc6377c4"
+        "sha": "90c83f42f4269f88046109df120046f677b9d873"
       },
       "homepage": "https://codspeed.io"
     },
@@ -981,7 +981,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/dash0hq/dash0-agent-plugin.git",
-        "sha": "956ff78dc7d5ee5a5aa8fb321a4e3abaeeb5f742"
+        "sha": "44be3b6fd8e6cbd1c5e59436a3e8db91d5920d0c"
       },
       "homepage": "https://dash0.com/"
     },
@@ -1424,7 +1424,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/heygen-com/hyperframes.git",
-        "sha": "6c71cf0240f5e491aaa72a608b47eb90fcb63784"
+        "sha": "091137e3c32f7c247b6a7cc1c81ece36cd60a937"
       },
       "homepage": "https://hyperframes.heygen.com"
     },
@@ -2301,7 +2301,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/quarkusio/quarkus-agent-mcp.git",
-        "sha": "63b88c3e8f9778146f6f2ce5964679a2d29f9164"
+        "sha": "4c1fcf1cba1f292315f7d33261274798305ea954"
       },
       "homepage": "https://quarkus.io"
     },
@@ -2363,7 +2363,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/Digital-Process-Tools/claude-remember.git",
-        "sha": "1c80bfb1be2b16c28e630e49a64cb8af8bb854b9"
+        "sha": "8bd6255f081dc7123b6b64d335a2c8c5a379ea00"
       },
       "homepage": "https://github.com/Digital-Process-Tools/claude-remember"
     },
@@ -2864,7 +2864,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/JetBrains/teamcity-cli.git",
-        "sha": "cdd1f78121adc4d87362e8d871c13462dded13a5"
+        "sha": "2406cb584cc5ca729ed9303b27bd070cf7b206ec"
       },
       "homepage": "https://www.jetbrains.com/teamcity/"
     },
@@ -3069,7 +3069,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/wix/skills.git",
-        "sha": "7d427f948b7a00416d698f52b36ff8c38cab95db"
+        "sha": "9cd9d7c60470194a6c3170e3d093a818a2f11d6b"
       },
       "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
     },

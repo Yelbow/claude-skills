@@ -11,8 +11,7 @@
       "Write(/home/jelle/Music/*)"
     ],
     "deny": [
-      "Bash(rm -rf:*)",
-      "Bash(sudo:*)"
+      "Bash(rm -rf:*)"
     ],
     "ask": [
       "Bash(rm *)",
@@ -28,99 +27,8 @@
       "/home/jelle/Music"
     ]
   },
+  "model": "sonnet",
   "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"/usr/bin/node\" \"/home/jelle/.claude/hooks/gsd-check-update.js\""
-          }
-        ]
-      },
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash \"/home/jelle/.claude/hooks/gsd-session-state.sh\""
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "matcher": "Bash|Edit|Write|MultiEdit|Agent|Task",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"/usr/bin/node\" \"/home/jelle/.claude/hooks/gsd-context-monitor.js\"",
-            "timeout": 10
-          }
-        ]
-      },
-      {
-        "matcher": "Read",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"/usr/bin/node\" \"/home/jelle/.claude/hooks/gsd-read-injection-scanner.js\"",
-            "timeout": 5
-          }
-        ]
-      },
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash \"/home/jelle/.claude/hooks/gsd-phase-boundary.sh\"",
-            "timeout": 5
-          }
-        ]
-      }
-    ],
-    "PreToolUse": [
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"/usr/bin/node\" \"/home/jelle/.claude/hooks/gsd-prompt-guard.js\"",
-            "timeout": 5
-          }
-        ]
-      },
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"/usr/bin/node\" \"/home/jelle/.claude/hooks/gsd-read-guard.js\"",
-            "timeout": 5
-          }
-        ]
-      },
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"/usr/bin/node\" \"/home/jelle/.claude/hooks/gsd-workflow-guard.js\"",
-            "timeout": 5
-          }
-        ]
-      },
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash \"/home/jelle/.claude/hooks/gsd-validate-commit.sh\"",
-            "timeout": 5
-          }
-        ]
-      }
-    ],
     "UserPromptSubmit": [
       {
         "hooks": [
@@ -141,7 +49,8 @@
     "skill-creator@claude-plugins-official": true,
     "superpowers@claude-plugins-official": true,
     "claude-mem@thedotmack": true,
-    "frontend-design@claude-plugins-official": true
+    "frontend-design@claude-plugins-official": true,
+    "gsd@claude-plugins-official": false
   },
   "extraKnownMarketplaces": {
     "context-mode": {
@@ -176,6 +85,5 @@
       "url": "https://mcp.unframer.co/mcp?id=03174a5c2968da4a4ff817f7b9b1a2f6791a63c0c6d87449bc9c7cd1fdc0773f&secret=txuS7xcxOw2JTT1clWTAfWAHuZpPOWSV"
     }
   },
-  "autocompact_percentage_override": 35,
-  "model": "haiku"
+  "autocompact_percentage_override": 35
 }

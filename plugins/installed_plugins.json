@@ -4,11 +4,11 @@
     "skill-creator@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/home/jelle/.claude/plugins/cache/claude-plugins-official/skill-creator/164b5c8dbc2a",
-        "version": "164b5c8dbc2a",
+        "installPath": "/home/jelle/.claude/plugins/cache/claude-plugins-official/skill-creator/a31db24e069f",
+        "version": "a31db24e069f",
         "installedAt": "2026-06-21T20:41:45.014Z",
-        "lastUpdated": "2026-06-22T08:57:31.924Z",
-        "gitCommitSha": "164b5c8dbc2af6e512f8315dd585dd060a0a91e3"
+        "lastUpdated": "2026-06-22T09:56:03.980Z",
+        "gitCommitSha": "a31db24e069fb3590e9d43fe8d5503275bcbb2d9"
       }
     ],
     "superpowers@claude-plugins-official": [
@@ -34,11 +34,11 @@
     "frontend-design@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/home/jelle/.claude/plugins/cache/claude-plugins-official/frontend-design/164b5c8dbc2a",
-        "version": "164b5c8dbc2a",
+        "installPath": "/home/jelle/.claude/plugins/cache/claude-plugins-official/frontend-design/a31db24e069f",
+        "version": "a31db24e069f",
         "installedAt": "2026-06-21T20:52:51.114Z",
-        "lastUpdated": "2026-06-22T08:57:31.925Z",
-        "gitCommitSha": "164b5c8dbc2af6e512f8315dd585dd060a0a91e3"
+        "lastUpdated": "2026-06-22T09:56:03.981Z",
+        "gitCommitSha": "a31db24e069fb3590e9d43fe8d5503275bcbb2d9"
       }
     ]
   }
