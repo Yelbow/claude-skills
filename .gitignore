@@ -12,6 +12,11 @@ paste-cache/
 .last-update-result.json
 .last-cleanup
 history.jsonl
+mcp-needs-auth-cache.json
+.gsd-profile
+cache/
+plans/
+settings.local.json
 
 # IDE and debug artifacts
 debug/
